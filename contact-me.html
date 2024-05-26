@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .name{
+            display: inline-block;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(106, 106, 106);
+        }
+        li{
+            float: left;
+        }
+        .sticky{
+            list-style-type: none;
+            background-color: rgb(253, 253, 253);
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 2vh;
+            padding-bottom: 2.8vh;
+            z-index: 1;
+        }
+        li a{
+            padding: 20px 16px;
+            display: inline-block;
+            text-align: center;
+            font-weight: 200;
+        }
+        li a:hover{
+            color: rgb(1, 169, 105);
+            transition: color 0.2s;
+        }
+        .loginBlock{
+            display: flex;
+            align-items: center;
+        }
+        #profile{
+         color: rgb(1, 169, 105);
+         
+        }
+        .login{
+        color: rgb(1, 169, 105);
+        font-weight: 200;
+        }
+        .body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(65, 183, 198);
+            position: relative;   
+            display: flex;
+            justify-content: center;
+        }
+        .contact{
+            padding-left: 20vw;
+            padding-top: 5vh;
+            flex-basis: 100%;
+            position: relative;
+        }
+        .contact h3{
+            font-size: 3em;
+        }
+        .content{
+            width: 5vw;
+            height: 0.5vh;
+            background-color: black;
+        }
+        .icon{
+            display: flex;
+            width: 30%;
+            justify-content: space-around;
+        }
+        .icon a{
+            color: black;
+        }
+        p{
+            font-weight: 100;
+        }
+        .form{
+            border: 1px solid black;
+            flex-basis: 100%;
+            padding-left: 10vw;
+            padding-top: 5vh;
+        }
+        input{
+            border: 2px solid black;
+            background-color: rgb(65, 183, 198);
+            width: 80%;
+        }
+        textarea{
+            resize: none;
+            background-color: rgb(65, 183, 198);
+            border: 2px solid black;
+        }
+        .box{
+            
+            height: 2em;
+            position: relative;
+            display: flex;
+            width: 80%;
+            
+        }
+        .box>*{
+            flex-basis: 100%;
+            
+        }
+        .submit{
+            color: white;
+            background-color: black;
+            transform: translate();
+            width: 100%;
+        }
+        .chatbot{
+            display: flex;
+            float: right;
+            position: sticky;
+            justify-content: space-around;
+            width: 25vh;
+            height: 5vh;
+            bottom: 0px;
+            right: 10px;
+            background-color: black;
+            align-items: center;
+        }
+        .chat{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <ul class="sticky">
+    <div class="name">
+        <h2>ALLAN JOHNSON</h2>
+        <p>personal Life Coach</p>
+    </div>
+    <div class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about-me.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./contact-me.html">Contact</a></li>
+        <li><div class="loginBlock">
+            <a href="" class="login"> <i class="bi bi-person-circle" id="profile"></i> Login</a>
+        </div>
+        </li>
+    </div>
+    </ul>
+    <!-- body -->
+    <div class="body">
+        <div class="contact">
+            <div class="content">
+            </div>
+           <h3>Contact</h3> <br><br>
+           <p>500 Terry Francios Street <br> San Francisco, CA 94158</p><br>
+           <p>Tel: 123-456-789 <br> Fax: 987-654-321</p><br>
+           <p>info@gmail.com</p><br>
+           <div class="icon">
+               <a href=""><i class="bi bi-facebook"></i></a><a href=""><i class="bi bi-twitter"></i></a><a href=""><i class="bi bi-instagram"></i></a><a href=""><i class="bi bi-youtube"></i></a>
+           </div><br><br>
+           <p>&copy 2023 by Personal Life Coach <br> Proudly created by Rattanon</p>
+        </div>
+        <div class="form">
+            <form action="">
+                <label for="name">Enter Your Name</label><br>
+                <input type="text" name="name">
+                <label for="email">Enter Your Email</label><br>
+                <input type="text" name="email">
+                <label for="sub">Enter Your Subject</label><br>
+                <input type="text" name="sub"><br>
+                <label for="msg">Message</label><br>
+                <textarea name="msg" cols="50" rows="10"></textarea>
+                <div class="box">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"><input type="submit" class="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Chatbot -->
+    <div class="chatbot">
+        <a href="" class="chat"><i class="bi bi-chat-dots-fill" class="chat"></i> Let's Chat!</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
